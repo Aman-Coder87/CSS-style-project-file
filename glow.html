@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="viewpoint" content="width = device-width" initial-scale = 1.0 maximum-scale = 1.0>
+		<title>GLOW HEAD</title>
+		<style>
+			
+			body {
+				margin:0;
+				padding: 0;
+				background: #000;
+				background-size: cover;
+				font-family:Sans-Serif ;
+			}
+			
+			.neon {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%,-50%);
+				margin: 0;
+				padding: 0 20px;
+				font-size: 4rem;
+				color: #fff;
+				text-shadow: 0 0 20px #ff005b;
+			}
+			
+			.neon:after {
+				content:attr(data-text);
+				position: absolute;
+				top: 0;
+			  left: 0;
+			  padding: 0 20px;
+			  z-index: -1;
+			  color: #ff005b;
+			  filter: blur(15px);
+			}
+			
+			.neon:before {
+				content: '';
+				position:absolute;
+				top: 0;
+				left: 0;
+				width:100%;
+				height: 100%;
+				background:#fe3a80 ;
+				z-index: -2;
+				opacity: .5;
+				filter: blur(50px);
+			}
+			
+			
+		</style>
+	</head>
+	<body>
+		
+		<h1 class="neon" data-text="WEB~SPYDER">WEB~SPYDER</h1>
+		
+	</body>
+</html>
